@@ -1,0 +1,147 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="rulehc2" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="rulehc2" scope="public">
+    <example>Sarah allume la lumiere du salon</example>
+    <tag>out.action=new Object(); </tag>
+    <item weight="2">Sarah</item>
+    <one-of>
+      <item>allume<tag>out.action.value="true";out.action.request="set"</tag></item>
+      <item>eteint<tag>out.action.value="false";out.action.request="set"</tag></item>
+	  <item>ferme<tag>out.action.value="false";out.action.request="set"</tag></item>
+	  <item>ouvre<tag>out.action.value="true";out.action.request="set"</tag></item>
+	  <item>quelle<tag>out.action.value="false";out.action.request="get"</tag></item>
+	  <item>regle<tag>out.action.request="set"</tag></item>
+	  <item>baisse<tag>out.action.request="set"</tag></item>
+	  <item>augmente<tag>out.action.request="set"</tag></item>
+	  <item>passe en<tag>out.action.request="launch"</tag></item>
+	  <item>positionne<tag>out.action.request="launch"</tag></item>
+	  <item>donne moi statut<tag>out.action.value="false";out.action.request="get"</tag></item>
+	  <item>quelle est la valeur<tag>out.action.value="false";out.action.request="get"</tag></item>
+	  <item>mise a jour du homecenter<tag>out.action.request="updatedevices"</tag></item>
+    </one-of>
+
+<!--  Modules § -->
+  <one-of>
+    <item>zwave<tag>out.action.module="zwave"</tag></item>
+    <item>admin<tag>out.action.module="admin"</tag></item>
+    <item>weather<tag>out.action.module="weather"</tag></item>
+    <item>lumiere<tag>out.action.module="lumiere"</tag></item>
+    <item> 134.1<tag>out.action.module=" 134.1"</tag></item>
+    <item>Plafonnier bain<tag>out.action.module="Plafonnier bain"</tag></item>
+    <item>plafonier chambre<tag>out.action.module="plafonier chambre"</tag></item>
+    <item>VMC_GV<tag>out.action.module="VMC_GV"</tag></item>
+    <item> 141.1<tag>out.action.module=" 141.1"</tag></item>
+    <item>VMC_PV<tag>out.action.module="VMC_PV"</tag></item>
+    <item> 145<tag>out.action.module=" 145"</tag></item>
+    <item>chambre<tag>out.action.module="chambre"</tag></item>
+    <item>chambre<tag>out.action.module="chambre"</tag></item>
+    <item>neon<tag>out.action.module="neon"</tag></item>
+    <item>lumiere<tag>out.action.module="lumiere"</tag></item>
+    <item>25<tag>out.action.module="25"</tag></item>
+    <item>SDB<tag>out.action.module="SDB"</tag></item>
+    <item>SDB<tag>out.action.module="SDB"</tag></item>
+    <item>lumiere cuisine<tag>out.action.module="lumiere cuisine"</tag></item>
+    <item>lumiere mirroir<tag>out.action.module="lumiere mirroir"</tag></item>
+    <item>29.1<tag>out.action.module="29.1"</tag></item>
+    <item>29.2<tag>out.action.module="29.2"</tag></item>
+    <item>Radiateur_chambre<tag>out.action.module="Radiateur_chambre"</tag></item>
+    <item>XBMC - Controles<tag>out.action.module="XBMC - Controles"</tag></item>
+    <item>porte entrée<tag>out.action.module="porte entrée"</tag></item>
+    <item>fenetre cuisine<tag>out.action.module="fenetre cuisine"</tag></item>
+    <item>fenêtre salon<tag>out.action.module="fenêtre salon"</tag></item>
+    <item>Notifications<tag>out.action.module="Notifications"</tag></item>
+    <item>hotte V1<tag>out.action.module="hotte V1"</tag></item>
+    <item>60.1<tag>out.action.module="60.1"</tag></item>
+    <item>hotte v2<tag>out.action.module="hotte v2"</tag></item>
+    <item>volet chambre<tag>out.action.module="volet chambre"</tag></item>
+    <item>VMC<tag>out.action.module="VMC"</tag></item>
+    <item>Jarvis<tag>out.action.module="Jarvis"</tag></item>
+    <item>Armoire_technique<tag>out.action.module="Armoire_technique"</tag></item>
+    <item>tele<tag>out.action.module="tele"</tag></item>
+    <item>porte salle de bain<tag>out.action.module="porte salle de bain"</tag></item>
+    <item>cinema<tag>out.action.module="cinema"</tag></item>
+    <item>porte salon<tag>out.action.module="porte salon"</tag></item>
+    <item>detecteur entrée<tag>out.action.module="detecteur entrée"</tag></item>
+    <item>entree<tag>out.action.module="entree"</tag></item>
+    <item>entree<tag>out.action.module="entree"</tag></item>
+    <item>luminosité entrée<tag>out.action.module="luminosité entrée"</tag></item>
+    <item>lumiere hotte<tag>out.action.module="lumiere hotte"</tag></item>
+    <item>78.1<tag>out.action.module="78.1"</tag></item>
+    <item>78.2<tag>out.action.module="78.2"</tag></item>
+    <item>Squeezebox<tag>out.action.module="Squeezebox"</tag></item>
+    <item>iPhone de Solene LECOMTEslK<tag>out.action.module="iPhone de Solene LECOMTEslK"</tag></item>
+    <item>Frigo<tag>out.action.module="Frigo"</tag></item>
+    <item>60.17<tag>out.action.module="60.17"</tag></item>
+    <item>bouilloire<tag>out.action.module="bouilloire"</tag></item>
+    <item>lumiere<tag>out.action.module="lumiere"</tag></item>
+    <item>100<tag>out.action.module="100"</tag></item>
+    <item>plaques_cuisson<tag>out.action.module="plaques_cuisson"</tag></item>
+    <item>General<tag>out.action.module="General"</tag></item>
+    <item>thingspeak<tag>out.action.module="thingspeak"</tag></item>
+    <item>104<tag>out.action.module="104"</tag></item>
+    <item>salon<tag>out.action.module="salon"</tag></item>
+    <item>salon<tag>out.action.module="salon"</tag></item>
+    <item>chauffe_eau<tag>out.action.module="chauffe_eau"</tag></item>
+    <item>Micro_Ondes<tag>out.action.module="Micro_Ondes"</tag></item>
+    <item>Lumiere couloir<tag>out.action.module="Lumiere couloir"</tag></item>
+    <item>NAS<tag>out.action.module="NAS"</tag></item>
+    <item>samsung GT-I9505G<tag>out.action.module="samsung GT-I9505G"</tag></item>
+    <item>samsung GT-I9505<tag>out.action.module="samsung GT-I9505"</tag></item>
+    <item>byackee<tag>out.action.module="byackee"</tag></item>
+    <item>samsung GT-I9505<tag>out.action.module="samsung GT-I9505"</tag></item>
+    <item>New Device<tag>out.action.module="New Device"</tag></item>
+    <item>samsung GT-I9505<tag>out.action.module="samsung GT-I9505"</tag></item>
+    <item>light on/off<tag>out.action.module="light on/off"</tag></item>
+    <item>Vmc GV<tag>out.action.module="Vmc GV"</tag></item>
+    <item>Vmc PV<tag>out.action.module="Vmc PV"</tag></item>
+    <item>Jour/Nuit<tag>out.action.module="Jour/Nuit"</tag></item>
+    <item>chauffage salon<tag>out.action.module="chauffage salon"</tag></item>
+    <item>MiniMote<tag>out.action.module="MiniMote"</tag></item>
+    <item>Chauffage chambre<tag>out.action.module="Chauffage chambre"</tag></item>
+    <item>mode veille<tag>out.action.module="mode veille"</tag></item>
+    <item>ouverture porte<tag>out.action.module="ouverture porte"</tag></item>
+    <item>hotte PV<tag>out.action.module="hotte PV"</tag></item>
+    <item>Hotte GV<tag>out.action.module="Hotte GV"</tag></item>
+    <item>Timer_lumiere<tag>out.action.module="Timer_lumiere"</tag></item>
+    <item>changeTemp<tag>out.action.module="changeTemp"</tag></item>
+    <item>simulateur aube<tag>out.action.module="simulateur aube"</tag></item>
+    <item>Notification volet<tag>out.action.module="Notification volet"</tag></item>
+    <item>Auto_Close_volet<tag>out.action.module="Auto_Close_volet"</tag></item>
+    <item>lumieres salon sur o<tag>out.action.module="lumieres salon sur o"</tag></item>
+    <item>Lumieres salon sur o<tag>out.action.module="Lumieres salon sur o"</tag></item>
+    <item>Update charts<tag>out.action.module="Update charts"</tag></item>
+    <item>Rediscover nodes<tag>out.action.module="Rediscover nodes"</tag></item>
+    <item>ouverture porte<tag>out.action.module="ouverture porte"</tag></item>
+    <item>New Scene<tag>out.action.module="New Scene"</tag></item>
+    <item>porte<tag>out.action.module="porte"</tag></item>
+  </one-of>
+<!-- §	 Modules -->
+
+<!--  Rooms @ -->
+  <one-of>
+    <item>Chambre<tag>out.action.room="Chambre"</tag></item>
+    <item>Salon<tag>out.action.room="Salon"</tag></item>
+    <item>Salle de bain<tag>out.action.room="Salle de bain"</tag></item>
+    <item>WC<tag>out.action.room="WC"</tag></item>
+    <item>Entree<tag>out.action.room="Entree"</tag></item>
+    <item>Général<tag>out.action.room="Général"</tag></item>
+  </one-of>
+<!-- @								 Rooms -->
+
+	<item repeat="0-1" weight="1.2">
+	<one-of>
+		<item>dix pourcent<tag>out.action.value="10"</tag></item>
+		<item>vingt pourcent<tag>out.action.value="20"</tag></item>
+		<item>trente pourcent<tag>out.action.value="30"</tag></item>
+		<item>quarante pourcent<tag>out.action.value="40"</tag></item>
+		<item>cinquante pourcent<tag>out.action.value="50"</tag></item>
+		<item>soixante pourcent<tag>out.action.value="60"</tag></item>
+		<item>soixante dix pourcent<tag>out.action.value="70"</tag></item>
+		<item>quatre vingt pourcent<tag>out.action.value="80"</tag></item>
+		<item>quatre vingt dix pourcent<tag>out.action.value="90"</tag></item>
+		<item>cent pourcent<tag>out.action.value="100"</tag></item>
+    </one-of>
+	</item>
+	
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/hc2";</tag>
+  </rule>
+</grammar>

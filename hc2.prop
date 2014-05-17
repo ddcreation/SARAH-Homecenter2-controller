@@ -1,0 +1,13 @@
+{
+  "modules" : { 
+    "hc2":     {
+      "description": "Home Center 2",
+      "version"    : "0.1",
+	  "ip"		   : "192.168.1.1",
+	  "login"	   : "user",
+	  "password"   : "password",
+	  "w"		   : "2",
+	  "h"	 	   : "2"
+    }
+  }
+}

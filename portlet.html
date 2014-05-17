@@ -1,0 +1,26 @@
+<h3 class='default'><%= key %> - <%= module.version %></h3>
+<% stylesheet('assets/'+key+'/portlet.css') %>
+<% 
+  var myHC2 = SARAH.ConfigManager.getModule(key); 
+  var status  = myHC2.status(SARAH.ConfigManager.getConfig()); 
+%>
+
+
+<div class="logo">
+  <a href="sarah/hc2" class="ajax"><img src="/assets/hc2/images/logo.png" align="top" width="100%"></a>
+</div>
+<div>
+	<br />
+	<b>Informations :</b>
+  	<% if (status !== 'dead') { %>
+  		<br />Connexion : <span class="status"><img src="/assets/hc2/images/<%= status %>.png" title="connexion etablie"></span>
+  	<% } else { %>
+  		<br />Connexion : <span class="status"><img src="/assets/hc2/images/dead.png" title="connexion refusee"></span>  
+  	<% } %>
+	<!--  Modules § -->
+	<br />Nombre de modules = <b>0</b>
+	<br />Nombre de pieces = <b>0</b>
+	<br />
+	<!-- § Modules -->
+</div>
+  
